@@ -14,7 +14,7 @@ class DayOne {
 			level += (val === '(') ? 1 : -1;
 		});
 		
-		console.log(level);
+		console.log('Day One: ' + level);
 		return level;
 	}
 
