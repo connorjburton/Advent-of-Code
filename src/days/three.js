@@ -32,7 +32,7 @@ class DayThree {
 			let lastSplit = history[history.length - 1].split('|');
 
 			lastSplit = lastSplit.map(function(val) {
-				if(val.split('')[0] === command) {
+				if(val[0] === command) {
 					return command + (this.calc[orig](parseInt(val.replace(command, '')), 1));
 				} else {
 					return val;
